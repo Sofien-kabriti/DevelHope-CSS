@@ -1,2 +1,2 @@
 Riscrivi le regole utilizzando custom properties.
-bla bla bla
+Usa il selettore :root, definendo lì tutte le proprietà e utilizzandole nei selettori body e .ball
