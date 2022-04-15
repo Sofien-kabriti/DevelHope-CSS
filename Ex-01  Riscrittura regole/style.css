@@ -1,0 +1,18 @@
+:root {
+    --sfondo: #011212;
+    --cerchio: #ff8800;
+    --size: 100px;
+     /* --size-2: 50px; */ 
+}
+
+body {
+    background-color: var(--sfondo);
+}
+
+.ball {
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--cerchio);
+    border-radius: calc(var(--size) / 2);
+     /* border-radius: var(--size-2); */ 
+}
