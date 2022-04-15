@@ -1,10 +1,21 @@
+ /* nei commenti ho messo una soluzione 
+  alternativa che funziona lo stesso 
+ dipende da come si preferisce  */ 
+:root {
+    --first-color: #011212;
+    --second-color: #ff8800;
+    --doppiaenne: 100px;
+     /* --cicoria: 50px; */ 
+}
+
 body {
-    background-color: #011212;
+    background-color: var(--first-color);
 }
 
 .ball {
-    width: 100px;
-    height: 100px;
-    background-color: #ff8800;
-    border-radius: 50px;
+    width: var(--doppiaenne);
+    height: var(--doppiaenne);
+    background-color: var(--second-color);
+    border-radius: calc(var(--doppiaenne) / 2);
+     /* border-radius: var(--cicoria); */ 
 }
