@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+       
+
+        .item-a {
+            grid-area: header;
+        }
+
+        .item-b {
+            grid-area: main;
+        }
+
+        .item-c {
+            grid-area: sidebar;
+        }
+
+        .item-d {
+            grid-area: footer;
+        }
+
+        .container {
+            background-color: rgb(207, 232, 220);
+            border: 2px solid rgb(79, 168, 227);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+                "header header header header"
+                "main main . sidebar"
+                "footer footer footer footer";
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Simple grid example</h1>
+
+    <section class="container">
+        <div class="item-a">item-a</div>
+        <div class="item-b">item-b</div>
+        <div class="item-c">item-c</div>
+        <div class="item-d">item-d</div>
+        <div class="item-e">item-e</div>
+      </section>
+
+
+</body>
+
+</html>
