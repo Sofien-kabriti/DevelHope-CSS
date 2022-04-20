@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 
-/* quick reset so all our padding is the right size */
 * {
   box-sizing: border-box;
 }
@@ -38,7 +36,8 @@
     grid-column: span 2;
 }
 .span-3{
-    grid-area:  /  /  / ;
+    /* grid-area:  /  /  / ; */
+    grid-column: 1 / 5;
 }
 
 .btn{
@@ -53,11 +52,13 @@
     background-color:orange;
 }
 
-    </style>
+
+
+</style>
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="calculator">
             <input type="text" class="calc-numbers" value="0">
             <div class="calculator-buttons">
@@ -84,6 +85,6 @@
                 
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </body>
 </html>
