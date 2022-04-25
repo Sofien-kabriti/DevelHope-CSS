@@ -7,53 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <style>
-       
-
-        .item-a {
-            grid-area: header;
-        }
-
-        .item-b {
-            grid-area: main;
-        }
-
-        .item-c {
-            grid-area: sidebar;
-        }
-
-        .item-d {
-            grid-area: footer;
-        }
-
-        .container {
-            background-color: rgb(207, 232, 220);
+       .item-1 {
+           grid-area: 1;
+       }
+       .item-2 {
+           grid-area: 2;
+       }
+       .item-3 {
+           grid-area: 3;
+       }
+       .container {
+        background-color: rgb(207, 232, 220);
             border: 2px solid rgb(79, 168, 227);
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: auto;
-            grid-template-areas:
-                "header header header header"
-                "main main . sidebar"
-                "footer footer footer footer";
-        }
 
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+                "1 2 . 3"
+       }
     </style>
 </head>
 
 <body>
 
-
-    <h1>Simple grid example</h1>
-
-    <section class="container">
-        <div class="item-a">item-a</div>
-        <div class="item-b">item-b</div>
-        <div class="item-c">item-c</div>
-        <div class="item-d">item-d</div>
-        <div class="item-e">item-e</div>
-      </section>
-
-
+<section class="container">
+<!-- <div class="item-+">+</div>
+<div class="item--">-</div>
+<div class="item-x">x</div> -->
+<div class="item-1">1</div>
+<div class="item-2">2</div>
+<div class="item-3">3</div>
+<!-- <div class="item-4">4</div>
+<div class="item-5">5</div>
+<div class="item-6">6</div>
+<div class="item-7">7</div>
+<div class="item-8">8</div>
+<div class="item-9">9</div>
+<div class="item-0">0</div>
+<div class="item-.">.</div>
+<div class="item-=">=</div> -->
+</section>
+      <!-- <button class="btn orange operator">+</button>
+      <button class="btn orange operator">-</button>
+      <button class="btn orange operator">x</button>
+      <button class="btn orange operator">&divide;</button>
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn span-3 orange operator">=</button>
+      <!-- <button class="btn orange operator">x</button> -->
+     <!--  <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button> -->
+      <!-- <button class="btn orange operator">-</button> -->
+   <!--    <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button> -->
+      <!-- <button class="btn orange operator">+</button> -->
+   <!--    <button class="btn">0</button>
+      <button class="btn">.</button>
+      <button class="btn">AC</button> --> -->
 </body>
 
 </html>

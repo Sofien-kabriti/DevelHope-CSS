@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Calculator for Front End Masters exercise</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .calculator {
+            max-width: 260px;
+            background: rgb(255, 255, 255);
+        }
+
+        .calculator-buttons {
+            display: grid;
+            grid-template-columns: [page-start] 65px [] 65px 65px [col-5] 65px;
+            grid-template-rows: [top-1] 65px [top-2] 65px [top-3] 65px [top-4] 65px 65px;
+            border: 0;
+        }
+
+        .calc-numbers {
+            font-family: 'Space Mono', serif;
+            background: rgb(83, 82, 82);
+            color: white;
+            font-size: 2em;
+            border: 0;
+            padding: 0.3em;
+            text-align: right;
+            width: 100%;
+            height: 80px;
+        }
+
+        .span-3 {
+            grid-column: col-5;
+            grid-row: top-2 / top-5;
+            background-color: rgb(230, 46, 46);
+        }
+
+        .btn:hover {
+            background: #fff;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="calculator">
+
+            <input type="text" class="calc-numbers" value="0">
+
+            <div class="calculator-buttons">
+                <button class="btn is-clear span-2 orange operator">+</button>
+                <button class="btn orange operator">-</button>
+                <button class="btn orange operator">x</button>
+                <button class="btn orange operator">&divide;</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button class="btn">AC</button>
+                <button class="btn span-3">=</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
